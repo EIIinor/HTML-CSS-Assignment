@@ -54,7 +54,11 @@ html, body {
         color: var(--color-white);
     }
 
+
+
 /* top-menu */
+
+
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -135,7 +139,10 @@ html, body {
 
 
 
+
 /* main-menu */
+
+
 
 .main-menu {
     background-color: var(--color-white);
@@ -257,5 +264,26 @@ html, body {
 @media (min-width:992px) {
     .top-menu .menu-links .links {
         display: inline;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-menu .container {
+       flex-direction: column;
+       padding-top: 30px;
+       text-align: center;
+       padding: 3rem;
+}
+
+@media (max-width: 768px) {
+    .main-menu .search {
+        padding-top: 3rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .main-menu .container .browse-categories {
+        padding-bottom: 30px;
     }
 }
