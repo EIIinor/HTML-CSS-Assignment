@@ -100,7 +100,6 @@ html, body {
                 border: none;
                 margin: 0;
                 width: 100%
-                margin: 0;
             }
                 .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover{
                     background-color: var(--color-theme-dark);
@@ -233,14 +232,23 @@ html, body {
                     font-size: 1.4em;
                   }
 
+                  .main-menu nav .browse-categories .dropdown-menu {
+                    background-color: var(--color-theme);
+                  }
 
+                  .main-menu nav .browse-categories .dropdown-menu .dropdown-item {
+                    color: var(--color-white);
+                  } 
+
+                  .main-menu nav .browse-categories .dropdown-menu .dropdown-item:hover {
+                    background-color: var(--color-theme-dark);
+                  }
 
         .main-menu nav .special-offer {
              flex: 7;
              display: flex;
              justify-content: end;
              align-items: center;
-
         }
 
 
@@ -285,5 +293,17 @@ html, body {
 @media (max-width:768px) {
     .main-menu .container .browse-categories {
         padding-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .main-menu .menu-links .menu-link:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .main-menu .menu-links .menu-link:nth-child(3) {
+        display: none;
     }
 }
