@@ -307,3 +307,9 @@ html, body {
         display: none;
     }
 }
+
+@media (max-width:768px) {
+    .main-menu .container .special-offer {
+        display: none;
+    }
+}
