@@ -387,9 +387,6 @@ html, body {
 
 /* shop-by-category */
 
-.shop-by-category {
-
-}
 
     .shop-by-category .grid {
         display: grid;
@@ -479,22 +476,39 @@ html, body {
     .showcase .showcase-body h1 strong {
         display: block;
     }
+    .webshop-info .container {
+        display: block;
+    }
+    .webshop-info .info-box {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .shop-by-category .category-box .category-box-title {
+        width: 80%;
+        font-size: 1rem;
+        padding: 1rem;
+        padding-left: 0.5rem;
+    }
+    .shop-by-category .grid {
+        gap: 0.5rem;
+        grid-template-columns: repeat(5, minmax(100px, 249px));
+        grid-template-rows: repeat(3, minmax(100px, 170px));
+    }
 }
 
 @media (min-width:992px) {
     .top-menu .menu-links .links {
         display: inline;
     }
-
     .showcase .container {
         text-align: left;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 0%;
+        padding-bottom: 0%;
     }
-
     .showcase img {
         display: block;
         width: 50%;
@@ -539,4 +553,24 @@ html, body {
     .webshop-info .container {
         flex-direction: column;
     }
+    .webshop-info .info-box {
+        padding: 0.5rem;
+        margin: 0.3rem;
+    }
+    .shop-by-category .container .section-title {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .shop-by-category .grid {
+        gap: 0.5rem;
+        grid-template-columns: repeat(5, minmax(65px, 70px));
+        grid-template-rows: repeat(3, minmax(90px, 90px));
+    }
+    .shop-by-category .category-box .category-box-title {
+        width: 90%;
+        font-size: 0.8rem;
+        padding: 1rem;
+        padding-left: 0.5rem;
+    }    
 }
