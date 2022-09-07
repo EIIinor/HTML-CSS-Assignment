@@ -456,7 +456,13 @@ html, body {
 
 
 
+
+
+
+
 /* media */
+
+
 
 
 
@@ -474,9 +480,6 @@ html, body {
         font-size: var(--font-size-60);
     }
     .showcase .showcase-body h1 strong {
-        display: block;
-    }
-    .webshop-info .container {
         display: block;
     }
     .webshop-info .info-box {
@@ -561,7 +564,6 @@ html, body {
         padding-top: 0;
         margin-top: 0;
     }
-
     .shop-by-category .grid {
         gap: 0.5rem;
         grid-template-columns: repeat(5, minmax(65px, 70px));
