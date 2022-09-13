@@ -56,6 +56,19 @@ html, body {
         color: var(--color-white);
     }
 
+.btn-theme-dark {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-theme-dark:hover {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+
 .btn-white {
     background-color: var(--color-white);
     color: var(--color-theme);
@@ -583,6 +596,55 @@ html, body {
                 .new-arrivals .card .card-menu li a:hover {
                     color: var(--color-theme);
                 }
+
+
+
+
+
+.showcase-2 {
+    background-color: var(--color-gray-3);
+    margin-top: 6rem;
+}
+.showcase-2 .container {
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+ }
+
+ .showcase-2 .showcase-body {
+    width: 300px;
+    background-color: var(--color-theme);
+}
+
+ .showcase-2 .showcase-body h1 {
+     font-family: var(--font-play);
+     font-size: 2rem;
+     color: var(--color-white);
+     padding-top: 5rem;
+ }
+     .showcase-2 .showcase-body h1 strong {
+         font-weight: var(--font-weight-bold);
+         color: var(--color-white);
+         font-size: 4rem;
+         margin: 1rem;
+     } 
+
+ .btn {
+    margin-bottom: 6rem;
+ }     
+
+ .showcase-2 .showcase-body p {
+     margin: 2rem 0;
+     color: var(--color-white);
+ }
+ 
+ .showcase-learn-more {
+    margin-top: 4rem;
+    width: 545px;
+    text-align: left;
+    color: var(--color-white);
+ }
+
 
 
 /*------------------------------MEDIA----------------------------------------*/
