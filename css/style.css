@@ -32,7 +32,7 @@
 }
 
 
-/* general */
+/*-------------------------------GENERAL-------------------------------------*/
 
 
 html, body {
@@ -73,6 +73,13 @@ html, body {
     background-color: var(--color-theme);
 }
 
+.instock {
+    color: var(--color-product-instock);
+}
+
+.outofstock {
+    color: var(--color-product-outofstock);
+}
 
 .section-title {
     padding: 3rem 0;
@@ -95,7 +102,7 @@ html, body {
 
 
 
-/* top-menu */
+/*-------------------------------TOP-MENU------------------------------------*/
 
 
 .top-menu {
@@ -122,6 +129,7 @@ html, body {
            color: var(--color-white);
            border: none;
            padding: 0;
+           transition: 0.15s ease-in-out;
         }
            .top-menu .site-settings .dropdown-theme button:hover {
                color: var(--color-theme-dark);
@@ -159,6 +167,7 @@ html, body {
         color: var(--color-white);
         text-decoration: none;
         margin: 0 1.2rem;
+        transition: 0.1s ease-in-out;
     }
     .top-menu .menu-links a:hover {
         color: var(--color-theme-dark);
@@ -178,7 +187,7 @@ html, body {
 
 
 
-/* main-menu */
+/*-------------------------------MAIN-MENU-----------------------------------*/
 
 
 
@@ -214,6 +223,7 @@ html, body {
              text-decoration: none;
              color: var(--color-theme-dark);
              margin: 0 0.8rem;
+             transition: 0.1s ease-in-out;
         }
             .main-menu .menu-links .menu-link:hover {
                  color: var(--color-theme);
@@ -269,6 +279,7 @@ html, body {
                    justify-content: space-between;
                    align-items: center;
                    padding: 0.7rem 1rem;
+                   transition: 0.15s ease-in-out;
                }
                   .main-menu nav .browse-categories button:hover {
                     background-color: var(--color-theme-dark);
@@ -306,7 +317,7 @@ html, body {
 
 
 
-/* showcase */
+/*--------------------------------SHOWCASE-----------------------------------*/
 
 
 
@@ -339,7 +350,7 @@ html, body {
 
 
 
-/* webshop-info */
+/*----------------------------------WEBSHOP-INFO-----------------------------*/
 
 
 
@@ -360,6 +371,7 @@ html, body {
         margin: 0 1rem;
         flex: 1;
         border-radius: var(--border-radius-small);
+        transition: all 0.3s ease-in-out;
     }
         .webshop-info .info-box:hover {
             background-color: var(--color-theme);
@@ -368,6 +380,8 @@ html, body {
 
         .webshop-info .info-box img {
             margin-right: 1.5rem;
+            filter: brightness(100%);
+            transition: all 0.3s ease-in-out;
         }
             .webshop-info .info-box:hover img {
                 filter: brightness(1000%);
@@ -378,6 +392,7 @@ html, body {
             color: var(--color-theme);
             font-size: 1rem;
             font-weight: var(--font-weight-medium);
+            transition: all 0.3s ease-in-out;
         }
             .webshop-info .info-box:hover h1 {
                 color: var(--color-white);
@@ -385,7 +400,7 @@ html, body {
 
 
 
-/* shop-by-category */
+/*----------------------------SHOP-BY-CATEGORY-------------------------------*/
 
 
     .shop-by-category .grid {
@@ -413,6 +428,7 @@ html, body {
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
             height: 38px;
+            transition: 0.2s ease-in-out;
         }
 
         .shop-by-category .category-box:hover .category-box-title {
@@ -455,12 +471,99 @@ html, body {
     }
 
 
+/*----------------------------NEW-ARRIVALS..................................*/
+
+.new-arrivals {
+    padding-top: 6rem;
+}
+    .new-arrivals .card {
+        position: relative;
+        height: 400px;
+        width: 350px;
+        overflow: hidden;
+        background-color: var(--color-gray-4);
+    }
+
+    .new-arrivals .card img {
+        height: 400px;
+    }
+
+    .new-arrivals .card .card-body {
+        position: absolute;
+        bottom: 0;
+        height: 14%;
+        color: var(--color-white);
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+        font-size: 1rem;
+    }
+        .new-arrivals .card:hover .card-body {
+            height: 40%;
+        }
+
+        .new-arrivals .card .card-body h1 {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+            transition: 0.3s ease-in-out;
+        }
+            .new-arrivals .card:hover .card-body h1 {
+                margin-bottom: 0;
+            }
+
+        .new-arrivals .card .card-body button {
+            background-color: transparent;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            font-size: 0.875rem;
+            padding-left: 0.9rem;
+            padding-right: 0.9rem;
+            margin: 0.5rem 0;
+        }
+    
+    .new-arrivals .card .card-background {
+        position: absolute;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        background-color: var(--color-theme-dark);
+        opacity: 0.90;
+        transition: height 0.3s ease-in-out;
+    }
+        .new-arrivals .card:hover .card-background {
+            height: 100%;
+        }
+
+    .new-arrivals .card .card-menu {
+        position: absolute;
+        z-index: 1;
+        top: 120%;
+        right: 5%;
+        list-style: none;
+        margin: auto;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-white);
+        transition: top 0.3s ease-in-out;
+    }
+        .new-arrivals .card:hover .card-menu {
+            top: 15px;
+        }
+
+        .new-arrivals .card .card-menu li {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+            font-size: 1.0em;
+        }
+            .new-arrivals .card .card-menu li a {
+                color: var(--color-gray-0);
+            }
+                .new-arrivals .card .card-menu li a:hover {
+                    color: var(--color-theme);
+                }
 
 
-
-
-
-/* media */
+/*------------------------------MEDIA----------------------------------------*/
 
 
 
@@ -487,17 +590,6 @@ html, body {
         margin: 1rem;
     }
 
-    .shop-by-category .category-box .category-box-title {
-        width: 80%;
-        font-size: 1rem;
-        padding: 1rem;
-        padding-left: 0.5rem;
-    }
-    .shop-by-category .grid {
-        gap: 0.5rem;
-        grid-template-columns: repeat(5, minmax(100px, 249px));
-        grid-template-rows: repeat(3, minmax(100px, 170px));
-    }
 }
 
 @media (min-width:992px) {
@@ -560,19 +652,5 @@ html, body {
         padding: 0.5rem;
         margin: 0.3rem;
     }
-    .shop-by-category .container .section-title {
-        padding-top: 0;
-        margin-top: 0;
-    }
-    .shop-by-category .grid {
-        gap: 0.5rem;
-        grid-template-columns: repeat(5, minmax(65px, 70px));
-        grid-template-rows: repeat(3, minmax(90px, 90px));
-    }
-    .shop-by-category .category-box .category-box-title {
-        width: 90%;
-        font-size: 0.8rem;
-        padding: 1rem;
-        padding-left: 0.5rem;
-    }    
+
 }
