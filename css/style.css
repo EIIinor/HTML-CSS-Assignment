@@ -761,7 +761,6 @@ html, body {
 .showcase-3 {
     background-color: var(--color-theme-dark);
     margin-top: 6rem;
-    height: 400px;
 }
 .showcase-3 .container {
     text-align: center;
@@ -820,7 +819,6 @@ html, body {
 .button {
     display: flex;
     display: inline-block;
-    margin-bottom: 100px;
     margin-left: 750px;
 }
   
@@ -830,9 +828,9 @@ html, body {
 
 .top-sellers .grid {
     display: grid;
-    gap: 0.8rem;
+    gap: 2rem;
     grid-template-columns: repeat(2,minmax(300px, 400px));
-    grid-template-rows: repeat(2,minmax(200px, 250px));
+    grid-template-rows: repeat(2,minmax(200px, 320px));
     justify-content: center;
 }
 
@@ -845,32 +843,40 @@ html, body {
     }
 
     .top-sellers .card img {
-        height: auto;
+        height: 100%;
     }
 
     .top-sellers .card .card-body {
         position: absolute;
         bottom: 0;
-        height: 14%;
+        height: 16%;
         width: 100%;
         color: var(--color-white);
         z-index: 1;
         transition: 0.3s ease-in-out;
         font-size: 1rem;
     }
+    .top-sellers #card-box-1 .card-body {
+        height: 7.5%;
+    }
         .top-sellers .card:hover .card-body {
-            height: 40%;
+            height: 45%;
         }
 
+        .top-sellers #card-box-1:hover .card-body {
+            height: 22%;
+        }
+        
         .top-sellers .card .card-body h1 {
             font-size: 1.125rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.4rem;
             transition: 0.3s ease-in-out;
             font-weight: var(--font-weight-regular);
         }
             .top-sellers .card:hover .card-body h1 {
                 margin-bottom: 0;
             }
+ 
 
         .top-sellers .card .card-body button {
             background-color: transparent;
@@ -903,6 +909,12 @@ html, body {
         transition: height 0.3s ease-in-out;
     }
         .top-sellers .card:hover .card-background {
+            height: 100%;
+        }
+    .top-sellers #card-box-1 .card-background {
+        height: 7%;
+    }
+        .top-sellers #card-box-1:hover .card-background {
             height: 100%;
         }
 
