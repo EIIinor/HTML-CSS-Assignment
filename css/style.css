@@ -1180,6 +1180,30 @@ margin: 0.4rem 0;
 }
 
 
+.external-logins {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+    .external-logins .label {
+        background-color: var(--color-gray-4);
+        padding: 0 1rem;
+        z-index: 1;
+    }
+
+        .external-logins .line {
+            position: absolute;
+            border: 1px solid black;
+            top: 10px;
+            left: 0;
+            right: 0;
+            z-index: 0;
+        }
+
+
+
+
+
 /*------------------------------MEDIA----------------------------------------*/
 
 
