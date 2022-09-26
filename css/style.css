@@ -626,7 +626,7 @@ margin: 0.4rem 0;
         height: 400px;
         width: 350px;
         overflow: hidden;
-        background-color: var(--color-gray-4);
+        background-color: var(--color-gray-3);
     }
 
     .new-arrivals .card img {
@@ -737,6 +737,7 @@ margin: 0.4rem 0;
  .showcase-2 .showcase-body {
     width: 300px;
     background-color: var(--color-theme);
+    margin-left: 2rem;
 }
 
  .showcase-2 .showcase-body h1 {
@@ -784,7 +785,7 @@ margin: 0.4rem 0;
         height: 400px;
         width: 350px;
         overflow: hidden;
-        background-color: var(--color-gray-4);
+        background-color: var(--color-gray-3);
     }
 
     .featured-products .card img {
@@ -951,7 +952,7 @@ margin: 0.4rem 0;
 
 .top-sellers .grid {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: repeat(2,minmax(300px, 400px));
     grid-template-rows: repeat(2,minmax(200px, 320px));
     justify-content: center;
@@ -962,7 +963,7 @@ margin: 0.4rem 0;
         height: auto;
         width: auto;
         overflow: hidden;
-        background-color: var(--color-gray-4);
+        background-color: var(--color-gray-3);
     }
 
     .top-sellers .card img {
