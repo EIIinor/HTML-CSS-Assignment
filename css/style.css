@@ -1051,11 +1051,11 @@ margin: 0.4rem 0;
         height: 7.5%;
     }
         .top-sellers .card:hover .card-body {
-            height: 45%;
+            height: 55%;
         }
 
         .top-sellers #card-box-1:hover .card-body {
-            height: 22%;
+            height: 28%;
         }
         
         .top-sellers .card .card-body h1 {
@@ -1187,7 +1187,7 @@ margin: 0.4rem 0;
 
 .subscribe-now {
     background-color: var(--color-gray-4);
-    margin-top: 6rem;
+    margin-top: 7rem;
 }
     .subscribe-now .container {
        text-align: center;
