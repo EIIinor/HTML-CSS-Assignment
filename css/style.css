@@ -384,6 +384,19 @@ margin: 0.4rem 0;
              font-size: var(--font-size-16);
         }
 
+        .main-menu .menu-links #shuffle {
+            position: relative;
+        }
+            .main-menu .menu-links #shuffle .badge {
+                background-color: var(--color-theme);
+                position: absolute;
+                top: -1.2rem;
+                left: 0.7rem;
+            }
+                .main-menu .menu-links #shuffle:hover .badge {
+                    background-color: var(--color-theme-dark);
+                }
+
         .main-menu .menu-links #cart {
             position: relative;
         }
@@ -739,8 +752,19 @@ margin: 0.4rem 0;
                     color: var(--color-theme);
                 }
 
-
-
+        
+        .new-arrivals .card-menu #shopping-cart img {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: 2.4rem;
+            top: 6.6rem;
+            opacity: 0;
+            pointer-events: none;
+        }
+            .new-arrivals .card-menu #shopping-cart:hover img {
+                opacity: 1;
+            }
 
 
 
@@ -750,46 +774,50 @@ margin: 0.4rem 0;
     background-color: var(--color-gray-1);
     margin-top: 6rem;
 }
-.showcase-2 .container {
-    text-align: center;
-    display: flex;
-    justify-content:space-between;
- }
 
- .showcase-2 .showcase-body {
-    width: 300px;
-    background-color: var(--color-theme);
-    margin-left: 2rem;
-}
+    .showcase-2 .container {
+        text-align: center;
+        display: flex;
+        justify-content:space-between;
+    }
 
- .showcase-2 .showcase-body h1 {
-     font-family: var(--font-play);
-     font-size: 2rem;
-     color: var(--color-white);
-     padding-top: 5rem;
- }
-     .showcase-2 .showcase-body h1 strong {
-         font-weight: var(--font-weight-bold);
-         color: var(--color-white);
-         font-size: 4rem;
-         margin: 1rem;
-     } 
+    .showcase-2 .showcase-body {
+        width: 250px;
+        background-color: var(--color-theme);
+        margin-left: 2rem;
+    }
+
+        .showcase-2 .showcase-body h1 {
+            font-family: var(--font-play);
+            font-size: 2rem;
+            color: var(--color-white);
+            padding-top: 5rem;
+        }
+
+            .showcase-2 .showcase-body h1 strong {
+                font-weight: var(--font-weight-bold);
+                color: var(--color-white);
+                font-size: 4rem;
+                margin: 1rem;
+            } 
+
+    .showcase-2 .showcase-body p {
+        color: var(--color-white);
+    }
 
  .btn {
     margin-bottom: 6rem;
  }     
 
- .showcase-2 .showcase-body p {
-     margin: 2rem 0;
-     color: var(--color-white);
+ .showcase-2 .showcase-learn-more {
+    margin-top: 6rem;
+    margin-right: 8rem;
+    color: var(--color-white);
+    text-align: left;
+    width: 500px;
  }
  
- .showcase-learn-more {
-    margin-top: 4rem;
-    width: 545px;
-    text-align: left;
-    color: var(--color-white);
- }
+
 
 
 
@@ -904,7 +932,19 @@ margin: 0.4rem 0;
                 }
 
 
-
+    .featured-products .card-menu #shopping-cart img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 2.4rem;
+        top: 6.6rem;
+        opacity: 0;
+        pointer-events: none;
+    }
+        .featured-products .card-menu #shopping-cart:hover img {
+            opacity: 1;
+        }
+        
 
 
 /*------------------------------THE SHOWCASE 3---------------------------------*/
@@ -916,40 +956,45 @@ margin: 0.4rem 0;
 .showcase-3 .container {
     text-align: center;
     display: flex;
-    display: block;
+    justify-content: space-between;
+    padding-bottom: 6rem;
  }
 
  .showcase-3 .info-box {
     width: 250px;
     height: 250px;
     background-color: var(--color-theme);
-    display: flex;
-    display: inline-block;
-    margin-right: 500px;
 }
 
- .showcase-3 .info-box h1 {
-     font-family: var(--font-play);
-     font-weight: var(--font-weight-bold);
-     font-size: 3.75rem;
-     color: var(--color-white);
-     padding-top: 1rem;
- }
+    .showcase-3 .info-box h1 {
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: 3.75rem;
+        color: var(--color-white);
+        padding-top: 1rem;
+    }
 
- .showcase-3 .info-box p {
-    color: var(--color-white);
- }
+    .showcase-3 .info-box p {
+        color: var(--color-white);
+        font-weight: var(--font-weight-bold);
+        font-size: 22px;
+    }
 
-.showcase-3 .container .count-down {
-    background-color: var(--color-white);
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border: dotted #20D3C2;
+.showcase-3 .container .count-down  {
     display: flex;
-    display: inline-block;
-    margin: 0.5rem;
+    padding-top: 6rem;
+    padding-right: 7rem;
 }
+    .showcase-3 .container .count-down .time {
+        background-color: var(--color-white);
+        border-radius: 50%;
+        border: dotted;
+        border-color: var(--color-theme);
+        width: 90px;
+        height: 90px;
+        margin: 0.5rem;
+     
+    }
 
 .showcase-3 .container .count-down h1 {
     color: var(--color-theme);
@@ -957,20 +1002,15 @@ margin: 0.4rem 0;
     padding-top: 1rem;
     font-size: 2.25rem;
     font-weight: var(--font-weight-bold);
-    display: flex;
-    justify-content: center;
-
 }
 .showcase-3 .container .count-down p {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
+    font-size: 0.8rem;
 }
 
 .button {
-    display: flex;
-    display: inline-block;
-    margin-left: 750px;
+    position: relative;
+   top: 7.5rem;
+   right: 18rem;
 }
   
 
@@ -1099,6 +1139,34 @@ margin: 0.4rem 0;
                 }
 
 
+    .top-sellers .card-menu #shopping-cart img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 2.4rem;
+        top: 6.6rem;
+        opacity: 0;
+        pointer-events: none;
+    }
+        .top-sellers .card-menu #shopping-cart:hover img {
+            opacity: 1;
+        }
+
+
+    .top-sellers .card-menu #magnifying-glass img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 2.4rem;
+        top: 4.7rem;
+        opacity: 0;
+        pointer-events: none;
+    }
+        .top-sellers .card-menu #magnifying-glass:hover img {
+            opacity: 1;
+        }
+    
+
  #card-box-1 {
    grid-column: 1/2;
    grid-row: 1/-1;
@@ -1132,9 +1200,8 @@ margin: 0.4rem 0;
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
         font-size: 3rem;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border-bottom: 0;
+        text-align: left;
+
     }
         .subscribe-now .subscribe-now-body h1 strong {
             color: var(--color-theme);
@@ -1146,10 +1213,50 @@ margin: 0.4rem 0;
         text-align: left;
         width: 400px;
         padding-left: 10px;
+        padding-left: 0;
     }
 
+    .subscribe-now .search #searchboxForm {
+        border-radius: var(--border-radius-medium);
+        height: 50px;
+        margin: auto;
+        position: relative;
+        right: 10rem;
+        padding-top: 0.5rem;
+        width: 450px;
+    }
 
+        .subscribe-now .search #searchboxForm input {
+            position: absolute;
+            border-radius: var(--border-radius-medium);
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: 1px solid var(--color-gray-5);
+            font-size: 0.9rem;
+            padding-left: 0.5rem;
+        }
 
+        .subscribe-now .search #searchboxForm button {
+            position: relative;
+            top: 0.3rem;
+            left: 19rem;
+            width: 120px;
+            height: 95%;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--border-radius-medium)  var(--border-radius-medium)  ;
+            transition: 0.3s ease-in-out;
+        }
+            .subscribe-now .search #searchboxForm button:hover {
+                background-color: var(--color-theme-dark);
+            }
+
+        .subscribe-now .search #searchboxForm  p {
+            text-align: center;
+            justify-content: center;
+        }
 
 
 /*-------------------------THE BOTTOM LINE-------------------------------*/

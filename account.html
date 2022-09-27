@@ -13,6 +13,7 @@
 </head>
 <body>    
     <header>
+            <!-- Top menu including dropdown menus and links -->
         <div class="top-menu">
         <div class="container">
             <div class="site-settings">
@@ -52,6 +53,8 @@
             </div>
         </div>
     </div>
+
+        <!-- Main menu including websites logotype, searchbox and links -->
     <div class="main-menu">
         <div class="container">
             <div class="brand">
@@ -66,14 +69,19 @@
             <div class="menu-links">
                 <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i>My account</a>
                 <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-                <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
+                <a id="shuffle" class="menu-link" href="#">
+                    <span class="badge rounded-pill">0</span>
+                    <i class="fa-regular fa-shuffle me-2"></i>
+                </a>
                 <a id="cart" class="menu-link" href="#">
                     <span class="badge rounded-pill">99+</span>
                     <i class="fa-regular fa-cart-shopping me-2"></i>
-                    <span>€99999.00</span>
+                    <span>€999.00</span>
                 </a>
             </div>
         </div>
+
+            <!--Dropdown menu and a button -->
         <nav>
             <div class="container">
                 <div class="browse-categories">
@@ -98,6 +106,7 @@
     </div>
     </header>
 
+        <!-- Container with title and a link to another website page -->
     <section class="site-title">
         <div class="container">
             <h1>My Account</h1>
@@ -110,6 +119,7 @@
         </div>
     </section>
 
+        <!-- Two forms for login and register -->
     <section class="signup-signin form-theme">
         <div class="container">
             <div class="card">
@@ -160,6 +170,7 @@
                         <div class="mb-4">
                             <label for="signup_firstName">Firstname <span class="required">*</span></label>
                             <input id="signup_firstName" type="text" required>
+                            <!-- Space for JS validation -->
                             <div class="invalid-feedback">
                                 Please write a valid firstname.
                             </div>
@@ -167,6 +178,7 @@
                         <div class="mb-4">
                             <label for="signup_lastName">Lastname <span class="required">*</span></label>
                             <input id="signup_lastName" type="text" required>
+                            <!-- Space for JS validation -->
                             <div class="invalid-feedback">
                                 Please write a valid lastname.
                             </div>
@@ -174,6 +186,7 @@
                         <div class="mb-4">
                             <label for="signup_email">Email <span class="required">*</span></label>
                             <input id="signup_emal" type="email" required>
+                            <!-- Space for JS validation -->
                             <div class="invalid-feedback">
                                 Please write a valid emailadress.
                             </div>
@@ -181,6 +194,7 @@
                         <div class="mb-4">
                             <label for="signup_password">Password <span class="required">*</span></label>
                             <input id="signup_password" type="password" required minlength="8">
+                            <!-- Space for JS validation -->
                             <div class="invalid-feedback">
                                 Please write a valid password.
                             </div>
@@ -196,6 +210,7 @@
 
     </section>
 
+        <!-- Bottom line container with text -->
     <section class="bottom-line">
         <div class="container">
             <div class="copyright">
@@ -203,8 +218,5 @@
             </div>
         </div>
     </section>
-
-
-
 </body>
 </html>
