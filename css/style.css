@@ -1028,6 +1028,7 @@ margin: 0.4rem 0;
 }
 .showcase-3 .container .count-down p {
     font-size: 0.8rem;
+    padding-top: 0;
 }
 
 .button {
